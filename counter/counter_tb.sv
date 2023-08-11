@@ -22,3 +22,9 @@ initial begin
       $finish ();
     end
 end
+initial begin
+  $dumpfile("counter.vcd");
+  $dumpvars(0,counter_tb);
+ end
+
+endmodule
